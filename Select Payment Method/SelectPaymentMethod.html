@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,57 @@
     <title>Select Payment Method</title>
     <link rel="stylesheet" href="./Select Payment Method.css">
 </head>
+
 <body>
-    
+
+    <div class='toggle'>
+        <div class='tabs'>
+            <div class='tab active'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+                <div id="paypal">
+                    <img src="./Image/paypal.png" alt="paypal">
+                    Pay with PayPal
+                </div>
+            </div>
+            <div class='tab str__ipe'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div id="stripe">
+                    <img src="./Image/stripe.png" alt="stripe">
+                    Pay with Stripe
+                </div>
+            </div>
+        </div>
+
+        <div class='panels'>
+            <div class='panel'>Panel 1 Lorem, soluta minus aliquam culpa sint quidem? In, cupiditate reprehenderit id
+                impedit quasi fugit voluptatem illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+                architecto? Expedita laudantium soluta, nesciunt consequatur totam neque dolor ducimus voluptatum
+                praesentium nisi dolorem laboriosam sed, architecto reiciendis qui possimus tenetur veritatis, quidem
+                harum blanditiis. Animi eveniet quas aut similique, assumenda voluptas sapiente rerum natus recusandae,
+                reiciendis ut, iste dolores commodi.</div>
+            <div class='panel'>Panel 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio dolore harum
+                eveniet iure praesentium dignissimos, animi eos reprehenderit ipsam tempora eum eligendi. Neque ab at
+                doloribus impedit, voluptatem, officiis corrupti molestiae iure dolore tempora repellendus. Incidunt
+                ipsum molestiae placeat doloribus voluptate? At, ullam veniam! Animi suscipit doloremque sit itaque
+                possimus.</div>
+        </div>
+    </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- js link -->
     <script src="./Select Payment Method.js"></script>
 </body>
+
 </html>

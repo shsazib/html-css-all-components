@@ -1,0 +1,94 @@
+.toggle {
+  font-family: arial, sans-serif;
+  width: 800px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+}
+.toggle .tabs {
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.toggle .tabs .tab {
+  position: relative;
+  text-align: center;
+  background: white;
+  color: #777777;
+  margin: 2px 8px 0;
+  padding: 0 8px;
+  cursor: pointer;
+  padding: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.toggle .tabs .tab svg {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20%;
+  display: none;
+}
+.toggle .tabs .tab.active svg {
+  display: block;
+}
+.toggle .tabs .tab.active {
+  color: #009de1;
+  border: 1px solid #009de1;
+  background-color: #d4eefa;
+}
+.toggle .tabs .str__ipe.active {
+  color: #635bff;
+  border: 1px solid #635bff;
+  background-color: #e6f0ff;
+}
+.toggle .panels .panel {
+  padding: 20px 10px;
+  display: none;
+}
+.toggle .panels .panel:first-child {
+  display: block;
+}
+#paypal img,
+#stripe img {
+  display: grid;
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .toggle {
+    font-family: arial, sans-serif;
+    width: 400px;
+  }
+  .toggle .tabs .tab {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  #paypal img,
+  #stripe img {
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .toggle {
+    font-family: arial, sans-serif;
+    width: 280px;
+  }
+  .toggle .tabs .tab {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+  #paypal img,
+  #stripe img {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
