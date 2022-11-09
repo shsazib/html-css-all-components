@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.payment-steps {
+  width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.my-cart,
+.check-out,
+.payment,
+.confirmation {
+  display: grid;
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+  margin: 0 30px;
+  color: #6666;
+}
+.my-cart i,
+.check-out i,
+.payment i,
+.confirmation i {
+  font-size: 30px;
+}
+.fa-angle-right {
+  font-size: 20px;
+  color: #bebebe66;
+}
+.my-cart p,
+.check-out p,
+.payment p,
+.confirmation p {
+  font-size: 17px;
+}
+.i-active {
+  color: #f67963;
+}
+
+@media screen and (max-width: 800px) {
+  .my-cart i,
+  .check-out i,
+  .payment i,
+  .confirmation i {
+    font-size: 50px;
+  }
+  .my-cart p,
+  .check-out p,
+  .payment p,
+  .confirmation p {
+    font-size: 27px;
+  }
+}
