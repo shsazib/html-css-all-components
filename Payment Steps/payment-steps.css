@@ -70,7 +70,14 @@
     font-size: 15px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
+  .my-cart,
+  .check-out,
+  .payment,
+  .confirmation {
+    grid-gap: 5px;
+    margin: 0 5%;
+  }
   .my-cart p,
   .check-out p,
   .payment p,
