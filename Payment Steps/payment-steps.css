@@ -38,8 +38,11 @@
 .confirmation p {
   font-size: 17px;
 }
-.i-active {
+.p-active {
   color: #f67963;
+}
+.con-active{
+  color: #00ae6e;
 }
 
 @media screen and (max-width: 800px) {
