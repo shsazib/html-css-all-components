@@ -41,21 +41,40 @@
 .p-active {
   color: #f67963;
 }
-.con-active{
+.con-active {
   color: #00ae6e;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+  .payment-steps {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .my-cart,
+  .check-out,
+  .payment,
+  .confirmation {
+    grid-gap: 5px;
+    margin: 0 15px;
+  }
   .my-cart i,
   .check-out i,
   .payment i,
   .confirmation i {
-    font-size: 50px;
+    font-size: 20px;
   }
   .my-cart p,
   .check-out p,
   .payment p,
   .confirmation p {
-    font-size: 27px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .my-cart p,
+  .check-out p,
+  .payment p,
+  .confirmation p {
+    display: none;
   }
 }
