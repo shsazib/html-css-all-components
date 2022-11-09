@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.confirm-sms {
+  display: grid;
+  justify-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 20px 10px;
+}
+.confirm-sms svg {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background-color: #dcfff9;
+  border-radius: 50%;
+  color: #0abb9b;
+}
+.confirm-sms h2 {
+  color: #333;
+  margin: 10px 0;
+}
+.confirm-sms p {
+  color: #666;
+}
+.confirm-sms span {
+  font-style: italic;
+}
