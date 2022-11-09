@@ -23,6 +23,7 @@
   padding: 20px 0;
   border: 1px solid #ddd;
   border-radius: 8px;
+  user-select: none;
 }
 .toggle .tabs .tab svg {
   width: 25px;
