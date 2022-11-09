@@ -77,4 +77,7 @@
   .confirmation p {
     display: none;
   }
+  .fa-angle-right {
+    font-size: 15px;
+  }
 }
