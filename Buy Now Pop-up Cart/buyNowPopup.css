@@ -219,6 +219,18 @@ p {
 }
 
 @media screen and (max-width: 576px) {
+  .modal-content {
+    bottom: -100vh;
+    right: 0;
+  }
+  .modal-container.active {
+    background: #0005;
+    pointer-events: all;
+  }
+  .modal-container.active .modal-content {
+    bottom: 0;
+  }
+
   .modal-body {
     padding: 10px;
   }
