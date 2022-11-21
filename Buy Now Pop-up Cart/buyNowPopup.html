@@ -15,27 +15,83 @@
 </head>
 
 <body>
-  <button class="modal-btn">OPEN</button>
+  <section class="full_pop_up_model_cart">
+    <button class="modal-btn">OPEN</button>
 
-  <div class="modal-container active">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Your Cart</h2>
-        <i class="close-btn las la-times"></i>
-      </div>
-      <div class="modal-body">
-        <div class="popup_empty_cart">
+    <div class="modal-container active">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Your Cart</h2>
+          <i class="close-btn las la-times"></i>
+        </div>
+        <div class="modal-body">
+
+          <div class="popup_model_product_carts">
+            <div class="popup_model_product_item">
+              <div class="popup_m_p_i_info">
+                <img src="https://picsum.photos/200/200" alt="lorem">
+                <div class="popup_m_p_i_i_name">
+                  <a href="#" class="a">Get the same random image on a seed, by adding <span>(1)</span></a>
+                  <div>
+                    <p>black</p>
+                  </div>
+                </div>
+              </div>
+              <div class="popup_m_p_i_i_right">
+                <i class="las la-trash-alt"></i>
+                <div class="popup_m_p_i_i_r_qun">
+                  <button>-</button>
+                  <input type="text" value="1" readonly>
+                  <button>+</button>
+                </div>
+                <p>TK. 12,300</p>
+              </div>
+            </div>
+
+            <div class="popup_model_product_item">
+              <div class="popup_m_p_i_info">
+                <img src="https://picsum.photos/200/200" alt="lorem">
+                <div class="popup_m_p_i_i_name">
+                  <a href="#" class="a">Get the same random image on a seed, by adding <span>(1)</span></a>
+                  <div>
+                    <p>black</p>
+                  </div>
+                </div>
+              </div>
+              <div class="popup_m_p_i_i_right">
+                <i class="las la-trash-alt"></i>
+                <div class="popup_m_p_i_i_r_qun">
+                  <button>-</button>
+                  <input type="text" value="1" readonly>
+                  <button>+</button>
+                </div>
+                <p>TK. 12,300</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- empty cart -->
+          <!-- <div class="popup_empty_cart">
           <img src="./image/empty.png" alt="empty">
           <h6>YOUR CART IS EMPTY!</h6>
           <p>Add your favorite items to your cart.</p>
           <a href="#">Shop Now</a>
+        </div> -->
+
+        </div>
+        <div class="model_sub_total">
+          <div class="model_sub_total_price">
+            <p>Subtotal <span>(1 item)</span></p>
+            <p>TK. 2,130</p>
+          </div>
+          <div class="model_sub_total_btn">
+            <!-- <a href="#" id="model_view_cart">View Cart</a> -->
+            <a href="#" id="model_checkout">Check Out</a>
+          </div>
         </div>
       </div>
-      <div>
-        <h1>hello</h1>
-      </div>
     </div>
-  </div>
+  </section>
 
   <script src="./buyNowPopup.js"></script>
 </body>
