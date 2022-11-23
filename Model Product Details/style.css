@@ -59,12 +59,13 @@ body {
   object-fit: cover;
   cursor: pointer;
   opacity: 0.5;
+  border: 1px solid #ddd;
 }
 .small_img img:hover {
   opacity: 1;
 }
 .small_img_active img {
-  border: 1px solid #ddd;
+  border: 2px solid #ef6d24;
   opacity: 1;
 }
 .buy_now_img_zoom {
