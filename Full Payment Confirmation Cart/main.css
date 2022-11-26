@@ -325,6 +325,77 @@ ul li {
   font-size: 22px;
 }
 
+
+
+
+/* delivery info */
+.delivery_info{
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.d_product{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 10px 20px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+}
+.d_product img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.d_product p{
+  color: #666;
+}
+.delivery_info_head{
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  color: #666;
+}
+.delivery_information{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+.di_head{
+  font-size: 18px;
+  color: #666;
+}
+.delivery_option label{
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 0 10px;
+  color: #666;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1200px) {
   /* payment-steps */
   .payment_steps {
@@ -347,6 +418,11 @@ ul li {
   .s_a_Edit_show {
     width: 100px;
   }
+
+  /* delivery info */
+.delivery_info{
+  width: 90%;
+}
 }
 
 @media screen and (max-width: 992px) {
@@ -372,6 +448,11 @@ ul li {
   .shipping_i_add_address {
     grid-template-columns: 1fr;
   }
+  /* delivery info */
+.delivery_option{
+  display: grid;
+  gap: 0.5rem;
+}
 }
 @media screen and (max-width: 768px) {
   /* payment-steps */
@@ -469,5 +550,14 @@ ul li {
   /* shopping_info */
   .shopping_info {
     width: 300px;
+  }
+  /* delivery info */
+  .delivery_information{
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .d_product {
+    margin: 10px 0;
   }
 }
