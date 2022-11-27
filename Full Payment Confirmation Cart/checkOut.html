@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- line-awesome cdn -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+
+<body>
+
+
+
+    <section class="payment_container">
+        <section class="payment_container_details">
+            <div class="payment_steps">
+                <div class="payment_steps_info p_active con_active">
+                    <!-- <i class="fa_solid fa-cart-shopping"></i> -->
+                    <i class="las la-shopping-cart"></i>
+                    <p>1. My Cart</p>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+                <div class="payment_steps_info p_active">
+                    <i class="las la-list-alt"></i>
+                    <p>2. Check Out</p>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+                <div class="payment_steps_info p_active">
+                    <i class="las la-map"></i>
+                    <p>3. Shipping info</p>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+                <div class="payment_steps_info">
+                    <i class="las la-truck"></i>
+                    <p>3. Delivery info
+                    </p>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+                <div class="payment_steps_info">
+                    <i class="las la-credit-card"></i>
+                    <p>4. Payment</p>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+                <div class="payment_steps_info">
+                    <i class="las la-check-circle"></i>
+                    <p>5. Confirmation</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="check_out_info">
+            <div>
+                <div class="customer_information">
+                    <div class="d-flex mb-3 align-items-center gap-3 Cus_inf ">
+                        <p id="c_one">1</p>
+                        <p>Customer Information</p>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="f-name">First Name</label>
+                            <input class="form-control" placeholder="First Name*" type="text" id="f-name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="l-name">Last Name</label>
+                            <input class="form-control" placeholder="Last Name*" type="text" id="l-name">
+                        </div>
+                    </div>
+                    <div id="c_address" class="mb-3">
+                        <label for="address">Address</label>
+                        <input class="form-control" type="text" id="address" placeholder="Address*">
+                    </div>
+                    <div id="c_mobile" class="mb-3">
+                        <label for="mobile">Phone</label>
+                        <input class="form-control" type="phone" id="mobile" placeholder="Telephone*">
+                    </div>
+                    <div id="c_email" class="mb-3">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" id="email" placeholder="E-mail*">
+                    </div>
+                    <div id="city_zone" class="row mb-3">
+                        <div id="c_city" class="col-md-6">
+                            <label for="city">City</label>
+                            <input class="form-control" type="text" id="city">
+                        </div>
+                        <div class="col-md-6 d-grid">
+                            <label for="zone">Zone</label>
+                            <select name="" id="zone" class="form-select">
+                                <option value="">Dhaka City</option>
+                                <option value="">Dhaka City</option>
+                                <option value="">Dhaka City</option>
+                                <option value="">Dhaka City</option>
+                                <option value="">Dhaka City</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="c_comment" class="mb-3">
+                        <label for="comment">Comment</label>
+                        <textarea name="" id="comment" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment_order">
+                <div class="order_overview mb-3">
+                    <div class="d-flex align-items-center gap-3 Cus_inf ">
+                        <p id="c_one">2</p>
+                        <p>Order Overview</p>
+                    </div>
+                    <div class="d-grid">
+                        <div class="row order_item order_item_name ">
+                            <p class="col-7 ">Product Name</p>
+                            <p class="col-3">Price</p>
+                            <p class="col-2">Total</p>
+                        </div>
+                        <div class="row order_item">
+                            <a href="#" class="col-7 order_over_product">Enter E-MO-A01 19-inch HD LED Backlit
+                                Monitor</a>
+                            <p class="col-3">TK. 1,20000 <span>x 1</span></p>
+                            <p class="col-2">TK. 1,20000</p>
+                        </div>
+                        <div class="row order_item">
+                            <a href="#" class="col-7 order_over_product">Enter E-MO-A01 19-inch HD LED Backlit
+                                Monitor</a>
+                            <p class="col-3">TK. 1,20000 <span>x 1</span></p>
+                            <p class="col-2">TK. 1,20000</p>
+                        </div>
+                        <div class="o_o_price order_item_name">
+                            <p>Sub-Total :</p>
+                            <p class="price_color">TK. 1,20000</p>
+                        </div>
+                        <div class="o_o_price order_item_name">
+                            <p>Home Delivery :</p>
+                            <p class="price_color">TK. 60</p>
+                        </div>
+                        <div class="o_o_price order_item_name">
+                            <p>Total :</p>
+                            <p class="price_color">TK. 1,20060</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment_delivery">
+                    <div class="payment_method">
+                        <div class="d-flex align-items-center gap-3 Cus_inf ">
+                            <p id="c_one">3</p>
+                            <p>Payment Method</p>
+                        </div>
+                        <p class="mt-2 mb-3">Select a payment method</p>
+                        <div class="user-select-none">
+                            <div>
+                                <input id="c_delivery" type="radio" name="payment">
+                                <label for="c_delivery">Cash on Delivery</label>
+                            </div>
+
+                            <div>
+                                <input id="p_delivery" type="radio" name="payment">
+                                <label for="p_delivery">POS on Delivery</label>
+                            </div>
+
+                            <div>
+                                <input id="o_delivery" type="radio" name="payment">
+                                <label for="o_delivery">Online Payment</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="delivery_method">
+                        <div class="d-flex align-items-center gap-3 Cus_inf">
+                            <p id="c_one">4</p>
+                            <p>Delivery Method</p>
+                        </div>
+                        <p class="mt-2 mb-3">Select a delivery method</p>
+                        <div class="user-select-none">
+                            <div>
+                                <input id="h_delivery" type="radio" name="price">
+                                <label for="h_delivery">Home Delivery - 60৳</label>
+                            </div>
+
+                            <div>
+                                <input id="s_delivery" type="radio" name="price">
+                                <label for="s_delivery"> Store Pickup - 0৳</label>
+                            </div>
+
+                            <div>
+                                <input id="r_delivery" type="radio" name="price">
+                                <label for="r_delivery"> Request Express - Charge Applicable </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>
