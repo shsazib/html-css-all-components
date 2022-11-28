@@ -218,11 +218,12 @@ ul li {
   padding-top: 20px;
 }
 
-.form-control:focus {
-  box-shadow: none;
+.form-control {
+  font-size: 14px;
 }
 .s_m_c_body .form-control:focus {
   border-color: #f67963;
+  box-shadow: none;
 }
 
 .shipping_close {
@@ -388,24 +389,17 @@ ul li {
 .payment_method,
 .delivery_method {
   background-color: #fff;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
 }
 
 .Cus_inf {
-  padding: 10px 0;
+  padding-bottom: 10px;
   border-bottom: 1px solid #eee;
   font-weight: 600;
   font-size: 18px;
 }
-#c_one {
-  padding: 2px;
-  background-color: #ffbeb3;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  text-align: center;
-}
+
 #city_zone {
   align-items: center;
 }
@@ -444,6 +438,30 @@ ul li {
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
 }
+.payment_order .row {
+  --bs-gutter-x: 5px;
+}
+.checkout_confirm {
+  width: 1000px;
+  margin: 0 auto;
+}
+.c_confirm_order {
+  background-color: #fe6246;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.agree {
+  color: #666;
+  align-items: baseline;
+}
+.agree a {
+  color: #fe6246b7;
+}
+.agree a:hover {
+  color: #fe6246;
+}
 
 @media screen and (max-width: 1200px) {
   /* payment-steps */
@@ -470,6 +488,11 @@ ul li {
 
   /* delivery info */
   .delivery_info {
+    width: 90%;
+  }
+  /* check_out_info */
+  .check_out_info,
+  .checkout_confirm {
     width: 90%;
   }
 }
@@ -502,6 +525,16 @@ ul li {
     display: grid;
     gap: 0.5rem;
   }
+  /* check_out_info */
+  .check_out_info {
+    grid-template-columns: 1fr;
+  }
+  .checkout_confirm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 768px) {
   /* payment-steps */
@@ -533,6 +566,16 @@ ul li {
   /* shopping_info */
   .shipping_modal_content {
     width: 90%;
+  }
+
+  /* check_out_info */
+  .payment_delivery {
+    grid-template-columns: 1fr;
+  }
+
+  .o_o_price {
+    grid-template-columns: 6fr 6fr;
+    text-align: left;
   }
 }
 @media screen and (max-width: 576px) {
@@ -608,5 +651,8 @@ ul li {
   }
   .d_product {
     margin: 10px 0;
+  }
+  .p_d_label {
+    font-size: 14px;
   }
 }

@@ -22,8 +22,6 @@
 
 <body>
 
-
-
     <section class="payment_container">
         <section class="payment_container_details">
             <div class="payment_steps">
@@ -61,152 +59,158 @@
             </div>
         </section>
 
-        <section class="check_out_info">
-            <div>
-                <div class="customer_information">
-                    <div class="d-flex mb-3 align-items-center gap-3 Cus_inf ">
-                        <p id="c_one">1</p>
-                        <p>Customer Information</p>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="f-name">First Name</label>
-                            <input class="form-control" placeholder="First Name*" type="text" id="f-name">
+        <section>
+            <div class="check_out_info">
+                <div>
+                    <div class="customer_information">
+                        <div class="d-flex mb-3 align-items-center gap-3 Cus_inf ">
+                            <p>Customer Information</p>
                         </div>
-                        <div class="col-md-6">
-                            <label for="l-name">Last Name</label>
-                            <input class="form-control" placeholder="Last Name*" type="text" id="l-name">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="f-name">First Name</label>
+                                <input class="form-control" placeholder="First Name*" type="text" id="f-name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="l-name">Last Name</label>
+                                <input class="form-control" placeholder="Last Name*" type="text" id="l-name">
+                            </div>
+                        </div>
+                        <div id="c_address" class="mb-3">
+                            <label for="address">Address</label>
+                            <input class="form-control" type="text" id="address" placeholder="Address*">
+                        </div>
+                        <div id="c_mobile" class="mb-3">
+                            <label for="mobile">Phone</label>
+                            <input class="form-control" type="phone" id="mobile" placeholder="Telephone*">
+                        </div>
+                        <div id="c_email" class="mb-3">
+                            <label for="email">Email</label>
+                            <input class="form-control" type="email" id="email" placeholder="E-mail*">
+                        </div>
+                        <div id="city_zone" class="row mb-3">
+                            <div id="c_city" class="col-md-6">
+                                <label for="city">City</label>
+                                <input class="form-control" type="text" id="city">
+                            </div>
+                            <div class="col-md-6 d-grid">
+                                <label for="zone">Zone</label>
+                                <select name="" id="zone" class="form-select">
+                                    <option value="">Dhaka City</option>
+                                    <option value="">Dhaka City</option>
+                                    <option value="">Dhaka City</option>
+                                    <option value="">Dhaka City</option>
+                                    <option value="">Dhaka City</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="c_comment" class="mb-3">
+                            <label for="comment">Comment</label>
+                            <textarea name="" id="comment" class="form-control"></textarea>
                         </div>
                     </div>
-                    <div id="c_address" class="mb-3">
-                        <label for="address">Address</label>
-                        <input class="form-control" type="text" id="address" placeholder="Address*">
-                    </div>
-                    <div id="c_mobile" class="mb-3">
-                        <label for="mobile">Phone</label>
-                        <input class="form-control" type="phone" id="mobile" placeholder="Telephone*">
-                    </div>
-                    <div id="c_email" class="mb-3">
-                        <label for="email">Email</label>
-                        <input class="form-control" type="email" id="email" placeholder="E-mail*">
-                    </div>
-                    <div id="city_zone" class="row mb-3">
-                        <div id="c_city" class="col-md-6">
-                            <label for="city">City</label>
-                            <input class="form-control" type="text" id="city">
+                </div>
+
+                <div class="payment_order">
+                    <div class="order_overview mb-3">
+                        <div class="d-flex align-items-center gap-3 Cus_inf ">
+                            <p>Order Overview</p>
                         </div>
-                        <div class="col-md-6 d-grid">
-                            <label for="zone">Zone</label>
-                            <select name="" id="zone" class="form-select">
-                                <option value="">Dhaka City</option>
-                                <option value="">Dhaka City</option>
-                                <option value="">Dhaka City</option>
-                                <option value="">Dhaka City</option>
-                                <option value="">Dhaka City</option>
-                            </select>
+                        <div class="d-grid">
+                            <div class="row order_item order_item_name ">
+                                <p class="col-4 col-md-7 ">Product Name</p>
+                                <p class="col-4 col-md-3">Price</p>
+                                <p class="col-4 col-md-2">Total</p>
+                            </div>
+                            <div class="row order_item">
+                                <a href="#" class="col-4 col-md-7  order_over_product">Enter E-MO-A01 19-inch HD LED
+                                    Backlit
+                                    Monitor</a>
+                                <p class="col-4 col-md-3 ">TK. 1,20000 <span>(1)</span></p>
+                                <p class="col-4 col-md-2 ">TK. 1,20000</p>
+                            </div>
+                            <div class="row order_item">
+                                <a href="#" class="col-4 col-md-7  order_over_product">Enter E-MO-A01 19-inch HD LED
+                                    Backlit
+                                    Monitor</a>
+                                <p class="col-4 col-md-3">TK. 1,20000 <span>x 1</span></p>
+                                <p class="col-4 col-md-2 ">TK. 1,20000</p>
+                            </div>
+                            <div class="o_o_price order_item_name">
+                                <p>Sub-Total :</p>
+                                <p class="price_color">TK. 1,20000</p>
+                            </div>
+                            <div class="o_o_price order_item_name">
+                                <p>Home Delivery :</p>
+                                <p class="price_color">TK. 60</p>
+                            </div>
+                            <div class="o_o_price order_item_name">
+                                <p>Total :</p>
+                                <p class="price_color">TK. 1,20060</p>
+                            </div>
                         </div>
                     </div>
-                    <div id="c_comment" class="mb-3">
-                        <label for="comment">Comment</label>
-                        <textarea name="" id="comment" class="form-control"></textarea>
+                    <div class="payment_delivery">
+                        <div class="payment_method">
+                            <div class="d-flex align-items-center gap-3 Cus_inf ">
+                                <p>Payment Method</p>
+                            </div>
+                            <p class="mt-2 mb-3">Select a payment method</p>
+                            <div class="user-select-none">
+                                <div>
+                                    <input id="c_delivery" type="radio" name="payment">
+                                    <label class="p_d_label" for="c_delivery">Cash on Delivery</label>
+                                </div>
+
+                                <div>
+                                    <input id="p_delivery" type="radio" name="payment">
+                                    <label class="p_d_label" for="p_delivery">POS on Delivery</label>
+                                </div>
+
+                                <div>
+                                    <input id="o_delivery" type="radio" name="payment">
+                                    <label class="p_d_label" for="o_delivery">Online Payment</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="delivery_method">
+                            <div class="d-flex align-items-center gap-3 Cus_inf">
+                                <p>Delivery Method</p>
+                            </div>
+                            <p class="mt-2 mb-3">Select a delivery method</p>
+                            <div class="user-select-none">
+                                <div>
+                                    <input id="h_delivery" type="radio" name="price">
+                                    <label class="p_d_label" for="h_delivery">Home Delivery - TK. 60</label>
+                                </div>
+
+                                <div>
+                                    <input id="s_delivery" type="radio" name="price">
+                                    <label class="p_d_label" for="s_delivery"> Store Pickup - TK. 0</label>
+                                </div>
+
+                                <div>
+                                    <input id="r_delivery" type="radio" name="price">
+                                    <label class="p_d_label" for="r_delivery"> Request Express - Charge Applicable
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="payment_order">
-                <div class="order_overview mb-3">
-                    <div class="d-flex align-items-center gap-3 Cus_inf ">
-                        <p id="c_one">2</p>
-                        <p>Order Overview</p>
-                    </div>
-                    <div class="d-grid">
-                        <div class="row order_item order_item_name ">
-                            <p class="col-7 ">Product Name</p>
-                            <p class="col-3">Price</p>
-                            <p class="col-2">Total</p>
-                        </div>
-                        <div class="row order_item">
-                            <a href="#" class="col-7 order_over_product">Enter E-MO-A01 19-inch HD LED Backlit
-                                Monitor</a>
-                            <p class="col-3">TK. 1,20000 <span>x 1</span></p>
-                            <p class="col-2">TK. 1,20000</p>
-                        </div>
-                        <div class="row order_item">
-                            <a href="#" class="col-7 order_over_product">Enter E-MO-A01 19-inch HD LED Backlit
-                                Monitor</a>
-                            <p class="col-3">TK. 1,20000 <span>x 1</span></p>
-                            <p class="col-2">TK. 1,20000</p>
-                        </div>
-                        <div class="o_o_price order_item_name">
-                            <p>Sub-Total :</p>
-                            <p class="price_color">TK. 1,20000</p>
-                        </div>
-                        <div class="o_o_price order_item_name">
-                            <p>Home Delivery :</p>
-                            <p class="price_color">TK. 60</p>
-                        </div>
-                        <div class="o_o_price order_item_name">
-                            <p>Total :</p>
-                            <p class="price_color">TK. 1,20060</p>
-                        </div>
-                    </div>
+            <div class="checkout_confirm d-flex justify-content-between align-items-center py-5 ">
+                <div class="d-flex gap-2 agree">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">I have read and agree to the <a href="#">Terms and Conditions</a>, <a
+                            href="#">Privacy Policy</a>
+                        and <a href="#">Refund and Return Policy</a></label>
                 </div>
-                <div class="payment_delivery">
-                    <div class="payment_method">
-                        <div class="d-flex align-items-center gap-3 Cus_inf ">
-                            <p id="c_one">3</p>
-                            <p>Payment Method</p>
-                        </div>
-                        <p class="mt-2 mb-3">Select a payment method</p>
-                        <div class="user-select-none">
-                            <div>
-                                <input id="c_delivery" type="radio" name="payment">
-                                <label for="c_delivery">Cash on Delivery</label>
-                            </div>
-
-                            <div>
-                                <input id="p_delivery" type="radio" name="payment">
-                                <label for="p_delivery">POS on Delivery</label>
-                            </div>
-
-                            <div>
-                                <input id="o_delivery" type="radio" name="payment">
-                                <label for="o_delivery">Online Payment</label>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="delivery_method">
-                        <div class="d-flex align-items-center gap-3 Cus_inf">
-                            <p id="c_one">4</p>
-                            <p>Delivery Method</p>
-                        </div>
-                        <p class="mt-2 mb-3">Select a delivery method</p>
-                        <div class="user-select-none">
-                            <div>
-                                <input id="h_delivery" type="radio" name="price">
-                                <label for="h_delivery">Home Delivery - 60৳</label>
-                            </div>
-
-                            <div>
-                                <input id="s_delivery" type="radio" name="price">
-                                <label for="s_delivery"> Store Pickup - 0৳</label>
-                            </div>
-
-                            <div>
-                                <input id="r_delivery" type="radio" name="price">
-                                <label for="r_delivery"> Request Express - Charge Applicable </label>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+                <button class="c_confirm_order">Confirm Order</button>
             </div>
         </section>
     </section>
-
-
-
 
 
     <!-- jquery cdn -->
