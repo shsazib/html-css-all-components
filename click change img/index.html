@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="">
+        <div class="">
+            <img class="parent_img" style="width: 400px; height: 400px; object-fit: cover;" src="img/275861400_3168221743414084_8866060580591661719_n.jpg" alt="img">
+        </div>
+        <div class="flex">
+            <!-- <img class="child_img" onclick="showDetailesImg(this)" style="width: 100px; height: 100px; object-fit: cover;" src="img/275861400_3168221743414084_8866060580591661719_n.jpg" alt="img">
+            <img class="child_img" onclick="showDetailesImg(this)" style="width: 100px; height: 100px; object-fit: cover;" src="img/_DSC1684 2.jpg" alt="img">
+            <img class="child_img" onclick="showDetailesImg(this)" style="width: 100px; height: 100px; object-fit: cover;" src="img/c714fe4f-38e1-41a7-b177-0f827208501a.__CR0,0,970,600_PT0_SX970_V1___.gif" alt="img"> -->
+            <img class="child_img" style="width: 100px; height: 100px; object-fit: cover;" src="img/275861400_3168221743414084_8866060580591661719_n.jpg" alt="img">
+            <img class="child_img" style="width: 100px; height: 100px; object-fit: cover;" src="img/_DSC1684 2.jpg" alt="img">
+            <img class="child_img" style="width: 100px; height: 100px; object-fit: cover;" src="img/c714fe4f-38e1-41a7-b177-0f827208501a.__CR0,0,970,600_PT0_SX970_V1___.gif" alt="img">
+        </div>
+    </div>
+</body>
+
+
+
+<script>
+
+
+    // const showDetailesImg = (smallImg) => {
+    //     const childImg = document.querySelectorAll('.child_img');
+    //         const parentImg = document.querySelector('.parent_img');
+    //         parentImg.src = smallImg.src;
+    // }
+
+    const parentImg = document.querySelector('.parent_img');
+    const childImg = document.querySelectorAll('.child_img');
+
+    const showDetailesImg = () => {
+        childImg.forEach((img) => {
+            img.addEventListener('click', (event) => {
+                childImg.forEach((images) => {
+                    images.style.border = '1px solid white';
+                    event.target.style.border = '1px solid black';
+                    parentImg.src = event.target.src;
+                });
+            })
+        });
+    }
+    showDetailesImg();
+
+
+
+
+</script>
+
+</html>
